@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_white_corner_16"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_yellow_top_left_top_right_16"
+        android:fontFamily="@font/open_sans_bold"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/dialog_header"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/benne_regular"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/dialog_title"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/edtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="30dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_white_corner_gray_border_16"
+        android:hint="@string/status"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner_16"
+            android:text="@string/cancel"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/btnChange"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_corner_16"
+            android:text="@string/change"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

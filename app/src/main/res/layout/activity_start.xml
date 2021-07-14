@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartActivity">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/circle" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+
+        android:text="@string/chat"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+
+        android:text="@string/with"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:elevation="3dp"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+
+        android:text="@string/your_friends"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_log_in"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/button_start_background"
+        android:elevation="3dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="@string/log_in"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:shadowColor="@color/text_shadow_white"
+
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/without_account" />
+
+        <TextView
+            android:id="@+id/txv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:focusable="true"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="1"
+            android:text="@string/sign_up"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
